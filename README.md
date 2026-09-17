@@ -7,7 +7,7 @@ Different from conventional black-box deep learning models, ProtoAF introduces p
 
 ## Project Structure
 
-'''
+```
 ├── checkpoints          # Saved model weights and training checkpoints
 ├── config               # YAML configuration files (paths, hyperparameters)
 ├── dataset              # Dataset loader and DataLoader definition
@@ -17,12 +17,12 @@ Different from conventional black-box deep learning models, ProtoAF introduces p
 ├── results              # Experimental logs, metrics and visualization results
 ├── train.py             # Training entry
 └── test.py              # Evaluation and inference entry
-'''
+```
 
 ## Environment Requirements
-'''
+```
 pip install torch torchvision numpy pandas scikit-learn pyyaml matplotlib tqdm
-'''
+```
 
 ## Quick Start
 
