@@ -1,0 +1,19 @@
+
+Test Results:
+Accuracy: 0.9919
+F1 Score (Macro): 0.9867
+AUC: 0.9996
+AUPRC: 0.9981
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0     0.9981    0.9920    0.9950      1617
+     Class 1     0.9652    0.9918    0.9783       364
+
+    accuracy                         0.9919      1981
+   macro avg     0.9817    0.9919    0.9867      1981
+weighted avg     0.9921    0.9919    0.9920      1981
+
+Confusion Matrix (raw counts):
+[[1604,   13],
+   [   3,  361]]

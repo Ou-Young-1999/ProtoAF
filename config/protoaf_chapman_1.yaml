@@ -1,0 +1,39 @@
+# config.yaml
+
+data:
+  train_csv: "./dataset_preprocess/chapman/fold_1_train.csv"
+  val_csv: "./dataset_preprocess/chapman/test.csv"
+  test_csv: "./dataset_preprocess/chapman/test.csv"
+  data_root_dir: "/home/oyxq/PythonProjects/dataset/Chapman/PTDB"
+
+model:
+  name: 'protoaf'
+  num_classes: 2
+
+training:
+  batch_size: 64
+  num_epochs: 50
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  device: "cuda"  # or "cpu"
+  seed: 42
+  oversample: false
+  save_checkpoint: true
+  checkpoint_path: "./checkpoints/protoaf_1.pth"
+  result: "./results/protoaf_chapman_1"
+
+augmentation:
+  target_length: 2500
+  p_amplitude_scale: 0.5
+  scale_range: [0.7, 1.3]
+  p_time_resize: 0.5
+  resize_mode_prob: 0.5
+  p_gaussian_noise: 0.5
+  noise_std_range: [0.05, 0.8]
+  p_baseline_wander: 0.5
+  bw_amplitude_range: [0.05, 0.8]
+  bw_freq_range: [0.1, 0.5]
+  p_lead_mask: 0.5
+  mask_range: [0.05, 0.5]
+  fs: 500
+  inplace: false
