@@ -1,4 +1,3 @@
-```
 # ProtoAF: An Explainable and Lightweight Prototype-Based Framework for Cross-Domain Atrial Fibrillation Screening
 
 ## Introduction
@@ -7,7 +6,6 @@ This repository is the official implementation of **ProtoAF**, a lightweight and
 Different from conventional black-box deep learning models, ProtoAF introduces prototype learning to enhance model interpretability while maintaining a lightweight architecture. It achieves stable and robust atrial fibrillation detection under cross-domain scenarios, effectively alleviating domain shift in clinical ECG data.
 
 ## Project Structure
-```
 
 .
 ├── checkpoints          # Saved model weights and training checkpoints
@@ -20,12 +18,9 @@ Different from conventional black-box deep learning models, ProtoAF introduces p
 ├── train.py             # Training entry
 └── test.py              # Evaluation and inference entry
 
-```
-
 ## Environment Requirements
-```bash
 pip install torch torchvision numpy pandas scikit-learn pyyaml matplotlib tqdm
-```
+
 
 ## Quick Start
 
