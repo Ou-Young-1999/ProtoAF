@@ -34,11 +34,7 @@ Get public ECG dataset download links from the `dataset_url` folder and download
 
 Update the **dataset path** in the `.yaml` configuration file under the `config` folder to your local dataset directory.
 
-### 3. Data Preprocessing
-
-Run scripts in `dataset_preprocess` to clean, resample and normalize raw ECG data.
-
-### 4. Model Training
+### 3. Model Training
 
 ```
 python train.py
@@ -46,7 +42,7 @@ python train.py
 
 Checkpoints will be automatically saved in `checkpoints/`, and training logs will be saved in `results/`.
 
-### 5. Model Testing
+### 4. Model Testing
 
 ```
 python test.py
